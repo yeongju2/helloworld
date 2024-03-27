@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<link href="./style.css" rel="stylesheet" />
+		<title>노마드코더 canvas 결과물</title>
+	</head>
+	<body>
+		<div class="stamp-options">
+			<img src="./img/1.png" class="stamp-current" alt="현재 스탬프"/>
+			<img src="./img/1.png" class="stamp-option"alt="꾸래핑" />
+			<img src="./img/2.png" class="stamp-option"alt="나나핑" />
+			<img src="./img/3.png" class="stamp-option"alt="차차핑" />
+			<img src="./img/4.png" class="stamp-option"alt="똑똑핑" />
+			<img src="./img/5.png" class="stamp-option"alt="볼트" />
+			<img src="./img/6.png" class="stamp-option"alt="루시" />
+			<img src="./img/7.png" class="stamp-option"alt="맥스" />
+			<img src="./img/8.png" class="stamp-option"alt="새미" />
+		</div>
+		<div class="color-options">
+			<input type="color" id="color" />
+			<div
+				class="color-option"
+				style="background: #c0392b"
+				data-color="#c0392b"
+			></div>
+			<div
+				class="color-option"
+				style="background: #e67e22"
+				data-color="#e67e22"
+			></div>
+			<div
+				class="color-option"
+				style="background: #f1c40f"
+				data-color="#f1c40f"
+			></div>
+			<div
+				class="color-option"
+				style="background: #16a085"
+				data-color="#16a085"
+			></div>
+			<div
+				class="color-option"
+				style="background: #2980b9"
+				data-color="#2980b9"
+			></div>
+			<div
+				class="color-option"
+				style="background: #34495e"
+				data-color="#34495e"
+			></div>
+			<div
+				class="color-option"
+				style="background: #8e44ad"
+				data-color="#8e44ad"
+			></div>
+			<div
+				class="color-option"
+				style="background: #95a5a6"
+				data-color="#95a5a6"
+			></div>
+			<div
+				class="color-option"
+				style="background: #2c3e50"
+				data-color="#2c3e50"
+			></div>
+		</div>
+		<canvas id="canvas"></canvas>
+
+		<div class="btns">
+			<input
+				type="range"
+				id="line-width"
+				max="10"
+				min="1"
+				value="5"
+				step="0.5"
+			/>
+			<button id="mode-btn">채우기모드</button>
+			<button id="destroy-btn">모두 지우기</button>
+			<button id="eraser-btn">지우개</button>
+			<label for="file">
+				사진 추가하기
+				<input type="file" accept="image/*" id="file" />
+			</label>
+			<input
+				type="text"
+				placeholder="글자 쓰고 더블클릭으로 입력"
+				id="text"
+			/>
+			<button id="save">그림 저장하기</button>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
